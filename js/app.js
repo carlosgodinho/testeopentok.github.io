@@ -10,8 +10,8 @@ var token = "";
 //initializeSession();
 
 // (optional) add server code here
-    var SERVER_BASE_URL = 'http://192.168.15.50:8080';
-    fetch(SERVER_BASE_URL + '/v1/chat/cliente/testeConferencia').then(function(res) {
+    var SERVER_BASE_URL = 'https://teste-open-tok.herokuapp.com';
+    fetch(SERVER_BASE_URL + '/session').then(function(res) {
       return res.json()
     }).then(function(res) {
       apiKey = res.apiKey;
