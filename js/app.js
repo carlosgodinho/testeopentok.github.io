@@ -1,20 +1,9 @@
 // replace these values with those generated in your TokBox Account
-var apiKey;
-var sessionId;
-var token;
+var apiKey = "46612782";
+var sessionId = "1_MX40NjYxMjc4Mn5-MTU5MTAxOTA1OTk4Nn5SamhMTUpwWHJoTGxaNDdEaGpyajRpdmd-fg";
+var token = "T1==cGFydG5lcl9pZD00NjYxMjc4MiZzaWc9ZGRmMmJmNTc3NWNmYTBkYzM1MWQzYzQ1NTg5MjFkMjU5NGY5NGFhYTpzZXNzaW9uX2lkPTFfTVg0ME5qWXhNamM0TW41LU1UVTVNVEF4T1RBMU9UazRObjVTYW1oTVRVcHdXSEpvVEd4YU5EZEVhR3B5YWpScGRtZC1mZyZjcmVhdGVfdGltZT0xNTkxMDU1MTI0Jm5vbmNlPTAuMzUyNTI2NDUwNjM2MjM0OSZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTkxMTQxNTIyJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9";
 
 // (optional) add server code here
-    var SERVER_BASE_URL = 'http://localhost:8080';
-    fetch(SERVER_BASE_URL + '/v1/chat/cliente/testeConferencia').then(function(res) {
-      return res.json()
-    }).then(function(res) {
-      apiKey = res.apiKey;
-      sessionId = res.sessionId;
-      token = res.token;
-      initializeSession();
-    }).catch(handleError);
-  
-
 initializeSession();
 
 // Handling all of our errors here by alerting them
