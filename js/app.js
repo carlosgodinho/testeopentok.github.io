@@ -4,7 +4,7 @@ var sessionId;
 var token;
 
 // (optional) add server code here
-    var SERVER_BASE_URL = 'http://192.168.15.50:8080';
+    var SERVER_BASE_URL = 'http://localhost:8080';
     fetch(SERVER_BASE_URL + '/v1/chat/cliente/testeConferencia').then(function(res) {
       return res.json()
     }).then(function(res) {
