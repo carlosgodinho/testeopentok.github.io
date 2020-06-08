@@ -24,6 +24,10 @@ function handleError(error) {
           height: '100%'
         }, handleError);
       });
+
+    session.on("sessionDisconnected", function(event) {
+     alert("The session disconnected. " + event.reason);
+        });
     // Create a publisher
     var publisher = OT.initPublisher('publisher', {
       insertMode: 'append',
