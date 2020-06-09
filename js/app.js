@@ -18,13 +18,13 @@ function handleError(error) {
   
     // Subscribe to a newly created stream
     session.on('streamCreated', function(event) {
+        alert("The session disconnected. ");
         session.subscribe(event.stream, 'subscriber', {
           insertMode: 'append',
           width: '100%',
           height: '100%'
         }, handleError);
       });
-
     session.on("sessionDisconnected", function(event) {
      alert("The session disconnected. " + event.reason);
         });
@@ -37,6 +37,7 @@ function handleError(error) {
   
     // Connect to the session
     session.connect(token, function(error) {
+        alert("The session disconnected. ");
       // If the connection is successful, publish to the session
       if (error) {
         handleError(error);
