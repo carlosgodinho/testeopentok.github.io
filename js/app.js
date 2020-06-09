@@ -5,7 +5,7 @@ var token = "T1==cGFydG5lcl9pZD00NjYxMjc4MiZzaWc9ZjRmMWYxNzBhNmM0MmQwNTg2NTFhMDN
 
 // (optional) add server code here
 initializeSession();
-alert("The session disconnected. " + event.reason);
+alert("The session disconnected. ");
 // Handling all of our errors here by alerting them
 function handleError(error) {
     if (error) {
